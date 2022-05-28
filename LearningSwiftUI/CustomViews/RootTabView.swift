@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AGSwiftPackage
 
 struct RootTabView: View {
     var body: some View {
@@ -18,6 +19,11 @@ struct RootTabView: View {
             HistoryView()
                 .tabItem {
                     Image(systemName: "book")
+                    Text("History")
+                }
+            DemoView()
+                .tabItem {
+                    Image(systemName: "Library")
                     Text("History")
                 }
         }
